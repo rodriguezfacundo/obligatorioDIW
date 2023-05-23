@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, span{
+    font-family: 'Quicksand', sans-serif;
+}
+/* --------------HEADER----------- */
+header{
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+}
+
+header nav a{
+    padding: 10px;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+header nav a:hover{
+    border-bottom: 3px solid rgba(0,0,0,.2);
+}
+
+header img{
+    margin-right: 400px;
+    width: 200px;
+}
+
+/* ----------------BIENVENIDA-------------- */
+
+.bienvenida {
+    margin: auto;
+    background-image: url(../images/bienvenida.jpg);
+    background-repeat: no-repeat;
+    background-color: #6a6a6a;
+    height: 720px;
+}
+
+.bienvenida div {
+    width: 1440px;
+    margin: auto;
+    padding-top: 200px;
+}
+
+.bienvenida div h1 {
+    font-size: 70px;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bienvenida div span {
+    color: black;
+    font-weight: bold;
+}
+
+.bienvenida div p {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 30%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bienvenida div a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    padding: 15px 20px;
+    transition: all 400ms ease;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bienvenida div a:hover {
+    box-shadow: 0px 1px 10px rgb(56, 53, 53);
+    background-color: #e0e0e0; 
+    color: #333;
+}
+
+
+/* --------------SINOPSIS-------------- */
+.sinopsis{
+    width: 1440px;
+    margin: auto;
+}
+.sinopsis h2{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 60px;
+}
+.sinopsis p{
+    font-size: 30px;
+    line-height: 42px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------------LAYOUT------------------------- */
+
+#layout{
+    max-width: 1440px;
+    margin: 10px auto;
+    width: 1440px;
+    display: grid;
+    grid-template-columns:repeat(3, 2fr) 50px 300px;
+    grid-template-rows:repeat(3,300px);
+}
+
+#layout article {
+    padding: 10px;
+    margin: 10px;
+}
+
+#layout article img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1%;
+}
+
+#layout article:nth-child(1){
+    grid-column:1 / 2;
+    grid-row:1/2;
+    
+}
+#layout article:nth-child(2){
+    grid-column:2/3;  
+    
+}
+#layout article:nth-child(3){
+    grid-column:3/4;
+     grid-row:1/4;
+    
+ }
+#layout article:nth-child(4){
+    grid-column:4/6;
+    grid-row: 1/2;
+     
+ }
+#layout article:nth-child(5){
+    grid-column:1/3;
+    grid-row:2/4;
+}
+
+#layout article:nth-child(6){
+    grid-column:4/6;
+    grid-row:2/4;
+}
+
+.imagenDos, .imagenSeis, .imagenTres{
+    object-fit: cover;
+}
+
+/* ---------------CRITICAS--------------- */
+.criticas{
+    margin-top: 80px;
+    background-color: rgb(227, 231, 244);
+}
+
+.criticas h2{
+    padding-top: 50px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.containerCriticas{
+    width: 1440px;
+    padding-bottom: 200px;
+    margin: auto;
+    display: flex;
+}
+
+.containerCriticas div{
+    width: 100%;
+    padding: 20px;
+}
+
+.containerCriticas div p{
+    font-size: 30px;
+    line-height: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.containerCriticas div img{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.containerCriticas div h4{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.containerCriticas div h5{
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+
+/* ---------------REPARTO--------------- */
+
+.reparto{
+    width: 1440px;
+    margin: auto;
+}
+
+.reparto .titulo{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.reparto h2{
+    text-align: center;
+    font-size: 60px;
+
+}
+.reparto h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.containerCards{
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.card{
+    width: 100%;
+    margin: 20px;
+    overflow: hidden;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+    font-family: 'Poppins', sans-serif;
+}
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.card .contenido ul li{ 
+    list-style: none;
+    padding: 10px;
+    margin-top: 10px;
+    transition: all 400ms ease;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* -------------------PREMIOS Y SUSCRIPCION------------------- */
+#sectionPremiosYSuscripcion{
+    background-image: linear-gradient(135deg, #faffff 0, #f1faf8 25%, #e5e5e5 50%, #d9d0d3 75%, #cec0c5 100%);
+}
+.containerPremiosSuscripcion{
+    width: 1440px;
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+}
+
+
+/* ---------------------PREMIOS------------------- */
+
+.containerPremios{
+    width: 100%;
+    padding: 40px
+}
+
+.containerPremios h2{
+    margin: 20px;
+    font-size: 60px;
+}
+
+table {
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial;
+    border: 2px solid #bdc3f7;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  th, td {
+    padding: 20px;
+  }
+  
+  thead {
+    background-color: #212A3E;
+    border-bottom: solid 2px #0F352D;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  tr:hover td {
+    background-color: #394867;
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+  /* -------------------------SUSCRIPCION -------------------------*/
+
+.containerSuscripcion{
+    width: 100%;
+    padding: 40px;
+}
+
+
+.containerSuscripcion h2{
+    margin: 20px;
+    font-size: 60px;
+}
+
+
+form{
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    height: 76%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+}
+
+.mensaje-privacidad {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.opciones-frecuencia {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.opciones-frecuencia label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    transform: scale(1.2);
+}
+
+input[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: #212A3E;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* -------------------FOOTER------------------- */
+footer {
+    background-color: rgb(241, 239, 239);
+    padding: 30px;
+  }
+  
+  .containerFooter {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+  }
+  
+  .containerFooter div:first-child {
+    margin-right: auto;
+  }
+  
+  .containerFooter div:last-child {
+    margin-left: auto;
+  }
+  
+  .containerFooter div:nth-child(2) {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .containerFooter div:nth-child(2) h4 {
+    margin: 0;
+  }
+  
+  footer .containerFooter div .imgLogo {
+    width: 200px;
+  }
+  
+  footer .containerFooter div a {
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  footer .containerFooter div a img {
+    width: 40px;
+  }
+  
+  
